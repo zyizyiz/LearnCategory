@@ -10,6 +10,10 @@
 
 @implementation YZStudent
 
++(void)load {
+    NSLog(@"load YZStudent");
+}
+
 +(void)initialize {
     NSLog(@"initialize YZStudent");
 }
