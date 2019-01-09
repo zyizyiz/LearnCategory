@@ -12,6 +12,7 @@
 		8147E2B121E3E56E00A7FF82 /* YZPerson+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147E2B021E3E56E00A7FF82 /* YZPerson+Custom.m */; };
 		8147E2B421E3E61F00A7FF82 /* YZPerson+Custom2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147E2B321E3E61F00A7FF82 /* YZPerson+Custom2.m */; };
 		8147E2B721E3E66100A7FF82 /* YZPerson+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147E2B621E3E66100A7FF82 /* YZPerson+A.m */; };
+		8147E38B21E63D6A00A7FF82 /* YZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147E38A21E63D6A00A7FF82 /* YZStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		8147E2B321E3E61F00A7FF82 /* YZPerson+Custom2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YZPerson+Custom2.m"; sourceTree = "<group>"; };
 		8147E2B521E3E66100A7FF82 /* YZPerson+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YZPerson+A.h"; sourceTree = "<group>"; };
 		8147E2B621E3E66100A7FF82 /* YZPerson+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YZPerson+A.m"; sourceTree = "<group>"; };
+		8147E38921E63D6A00A7FF82 /* YZStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZStudent.h; sourceTree = "<group>"; };
+		8147E38A21E63D6A00A7FF82 /* YZStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				8147E2B321E3E61F00A7FF82 /* YZPerson+Custom2.m */,
 				8147E2B521E3E66100A7FF82 /* YZPerson+A.h */,
 				8147E2B621E3E66100A7FF82 /* YZPerson+A.m */,
+				8147E38921E63D6A00A7FF82 /* YZStudent.h */,
+				8147E38A21E63D6A00A7FF82 /* YZStudent.m */,
 			);
 			path = LearnCategory;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			files = (
 				8147E2B721E3E66100A7FF82 /* YZPerson+A.m in Sources */,
 				8147E2A621E3E44500A7FF82 /* main.m in Sources */,
+				8147E38B21E63D6A00A7FF82 /* YZStudent.m in Sources */,
 				8147E2AE21E3E49E00A7FF82 /* YZPerson.m in Sources */,
 				8147E2B121E3E56E00A7FF82 /* YZPerson+Custom.m in Sources */,
 				8147E2B421E3E61F00A7FF82 /* YZPerson+Custom2.m in Sources */,

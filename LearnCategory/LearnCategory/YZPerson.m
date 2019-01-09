@@ -10,6 +10,14 @@
 
 @implementation YZPerson
 
++(void)load {
+    NSLog(@"load YZPerson");
+}
+
++(void)initialize {
+    NSLog(@"initialize YZPerson");
+}
+
 -(void)print {
     NSLog(@"my name is %@,age is %@",_name,_age);
 }

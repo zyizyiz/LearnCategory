@@ -10,8 +10,16 @@
 
 @implementation YZPerson (Custom)
 
++(void)load {
+    NSLog(@"load YZPerson (Custom)");
+}
+
++(void)initialize {
+    NSLog(@"initialize YZPerson (Custom)");
+}
+
 -(void)print {
-    NSLog(@"my name is YZ,age is 100");
+    NSLog(@"my name is YZCustom,age is 100");
 }
 
 @end

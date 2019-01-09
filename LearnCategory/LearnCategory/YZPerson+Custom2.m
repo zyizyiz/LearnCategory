@@ -9,7 +9,16 @@
 #import "YZPerson+Custom2.h"
 
 @implementation YZPerson (Custom2)
+
++(void)load {
+    NSLog(@"load YZPerson (Custom2)");
+}
+
++(void)initialize {
+    NSLog(@"initialize YZPerson (Custom2)");
+}
+
 -(void)print {
-    NSLog(@"my name is YZ2,age is 200");
+    NSLog(@"my name is YZCustom2,age is 200");
 }
 @end
