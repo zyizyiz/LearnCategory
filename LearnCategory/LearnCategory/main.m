@@ -20,12 +20,37 @@
 #import <Foundation/Foundation.h>
 #import "YZPerson.h"
 #import "YZStudent.h"
+#import <objc/runtime.h>
+
+void printClassMethod(Class cls) {
+    unsigned int outCount = 0;
+    Method *methods = class_copyMethodList(cls, &outCount);
+    NSString *className = NSStringFromClass(cls);
+    NSMutableString *methodNameList = [[NSMutableString alloc]initWithString:[NSString stringWithFormat:@"%@ -> ",className]];
+    for (int i = 0; i < outCount; i++) {
+        Method method = methods[i];
+        NSString *methodName =  NSStringFromSelector(method_getName(method));
+        [methodNameList appendString:methodName];
+        [methodNameList appendString:@" "];
+    }
+    NSLog(@"%@",methodNameList);
+    free(methods);
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        [YZPerson alloc];
         [YZStudent alloc];
-        [[[YZPerson alloc]init] print];
+        YZPerson *man = [[YZPerson alloc]init];
+        [man print];
+        // YZPerson -> print print print .cxx_destruct name setName: print age setAge:
+        printClassMethod([YZPerson class]);
+        // YZStudent ->
+        printClassMethod([YZStudent class]);
+        // YZStudent -> initialize
+        Class metaClass = object_getClass([YZStudent class]);
+        printClassMethod([metaClass class]);
+        
     }
     return 0;
 }
