@@ -63,8 +63,10 @@ int main(int argc, const char * argv[]) {
         
         YZPerson *man = [[YZPerson alloc]init];
         [man print];
+        NSLog(@"------------------------------");
         // YZPerson -> print print print .cxx_destruct name setName: print age setAge:
         printClassMethod([YZPerson class]);
+        printClassMethod([man class]);
         // YZStudent ->
         printClassMethod([YZStudent class]);
         
@@ -82,6 +84,7 @@ int main(int argc, const char * argv[]) {
         printClassMethod([metaClass class]);
         // isMetaClass 1
         NSLog(@"isMetaClass %i",class_isMetaClass(metaClass));
+        
     }
     return 0;
 }
