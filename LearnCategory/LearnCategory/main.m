@@ -57,12 +57,17 @@ void printClassMethod(Class cls) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        NSLog(@"------------------------------");
 //        [YZPerson alloc];
         [YZStudent alloc];
         
         
+        NSLog(@"------------------------------");
         YZPerson *man = [[YZPerson alloc]init];
         [man print];
+        NSLog(@"------------------------------");
+        [YZPerson load];
+        [YZPerson initialize];
         NSLog(@"------------------------------");
         // YZPerson -> print print print .cxx_destruct name setName: print age setAge:
         printClassMethod([YZPerson class]);
