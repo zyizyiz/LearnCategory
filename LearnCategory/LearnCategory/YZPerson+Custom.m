@@ -18,7 +18,11 @@
     NSLog(@"initialize YZPerson (Custom)");
 }
 
--(void)print {
+- (void)print {
+    NSLog(@"my name is YZCustom,age is 100");
+}
+
+- (void)printCustom {
     NSLog(@"my name is YZCustom,age is 100");
 }
 

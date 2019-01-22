@@ -10,6 +10,9 @@
 
 @interface YZPerson (A)
 
+// 是否是学生
+@property(nonatomic,assign,setter=setStudentState:)Boolean isStudent;
+
 -(void)print;
 
 @end

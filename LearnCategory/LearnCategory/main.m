@@ -44,7 +44,8 @@
 #import "YZPerson.h"
 #import "YZStudent.h"
 #import <objc/runtime.h>
-
+#import "YZPerson+A.h"
+ß
 void printClassMethod(Class cls) {
     unsigned int outCount = 0;
     Method *methods = class_copyMethodList(cls, &outCount);
@@ -71,6 +72,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"------------------------------");
         YZPerson *man = [[YZPerson alloc]init];
         [man print];
+        // 关联属性
+        [man setStudentState:false];
+        NSLog(@"%hhu",man.isStudent);
         NSLog(@"------------------------------");
         [YZPerson load];
         [YZPerson initialize];
@@ -95,6 +99,7 @@ int main(int argc, const char * argv[]) {
         printClassMethod([metaClass class]);
         // isMetaClass 1
         NSLog(@"isMetaClass %i",class_isMetaClass(metaClass));
+        
         
     }
     return 0;

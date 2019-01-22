@@ -17,4 +17,6 @@
 +(void)initialize {
     NSLog(@"initialize YZStudent");
 }
+
+
 @end
